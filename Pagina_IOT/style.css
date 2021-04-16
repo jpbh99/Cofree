@@ -1,0 +1,79 @@
+body { /* Se define la famiia del texto */
+  margin: 0em;
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {/* Se define la famiia del texto */
+  font-family: 'Spectral', serif;
+}
+
+.Cover {/* Se define el estilo del cover*/
+  height: 600px;
+  background-image: url(assets/Presentacion.jpg);
+  color: rgb(215, 215, 215);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.Fondo{/* Se define el estilo del fondo*/
+  height: 250px;
+  background-color: rgb(217, 217, 217);
+  color: rgb(0, 0, 0);
+}
+
+.card {/* Se define el estilo de la tarjeta*/
+  border: 0 !important;
+}
+
+.card-tittle {/* Se define el estilo de la tarjeta*/
+  min-height: 3rem;
+}
+
+.card-text {/* Se define el estilo de la tarjeta*/
+  min-height: 15rem;
+}
+
+.escala-img-index{/* Se define la escala*/
+    transform: scale(.7);
+}
+
+.container-fluid {/* Se define el estilo del container*/
+    overflow: hidden;
+    margin-top: 250px;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+
+small { /* Se define el estilo del pie de pagina*/
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+    color: #989c9e !important
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.navbar-brand{
+    width:70%;
+    text-align: center;
+}

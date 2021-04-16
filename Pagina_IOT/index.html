@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cofree</title> <!-- Se hace el encabezado con el estilo de texto, se integra bootstrap y los estilos -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header><!-- Se hace la Presentacion de cofree con imagen de fondo y texto, ademas se integra una barra de navegacion-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="caract.html">Caracteristicas</a>
+        </li>
+      </ul>
+      <a class="navbar-brand" href="#">Cofree</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="php-login/login.php">Inicio de sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php-login/signup.php">Registro</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="Cover d-flex justify-content-center align-items-center flex-column">
+      <h1> Cofree</h1>
+      <p>Sistema de monitoreo y ventilación en espacios cerrados</p>
+      <a class="btn btn-primary" href="#Cofree" role="button">Conoce más</a>
+    </div>
+  </header>
+
+
+  <section><!-- Seccion en la que se explica que es Cofree -->
+    <div class="container mt-5" id="Cofree">
+      <div class="d-flex justify-content-center">
+        <h3 style="color:rgb(42, 76, 167)" ;><strong>¿Que es Cofree?</strong></h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <img src="assets/Iot.jpg" style="height: 300px;margin-left:10rem">
+        </div>
+        <div class="col-sm-5" style="text-align: justify;">
+          Cofree es una alternativa que nace para ayudar a que la vuelta a la presencialidad se dé
+          con las mejores herramientas para la prevencion del contagio del Covid-19. Su funcionamiento
+          se basa  en un sistema para el monitoreo y ventilación de lugares cerrados en donde pueden
+          aumentar las probabilidades de contagio de covid. De igual forma, permite que se lleve un
+          registro de los dias donde se presenta más contaminación y las variables que mas influyen
+          en la mala calidad del aire, para que así el usuario cuente con la información necesaria
+          para tomar medidas preventivas adicionales.
+        </div>
+      </div>
+  </section>
+
+
+
+  <section>
+    <div class="container mt-5 mb-5 "><!-- Seccion donde se agupan las tarjetas con informacion sobre donde lo pueden usar ordenadas por filas y columnas -->
+      <div class="d-flex justify-content-center">
+        <h3 style="color:rgb(42, 76, 167)" ;><strong>Donde lo puedes usar</strong></h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p>El sistema se encuentra diseñado con el fin de ser usado en espacios cerrados, frecuentados por un aforo de personas. </p>
+      </div>
+      <div class="row">
+
+        <div class="col">
+          <div class="card text-white bg-secondary">
+            <img src="assets/Restaurante.jpg" class="card-img-top" style="height: 280px;">
+            <div class="card-body">
+              <h5 class="card-title">Restaurante</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card text-white bg-dark">
+            <img src="assets/Gimnasio.jpg" class="card-img-top" style="height: 280px;">
+            <div class="card-body">
+              <h5 class="card-title">Gimnasio</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-dark bg-light">
+            <img src="assets/Oficina.jpg" class="card-img-top" style="height: 280px;">
+            <div class="card-body">
+              <h5 class="card-title">Oficina</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container mt-5"><!-- Seccion donde se sobre el por que elegirnos -->
+      <div class="row">
+        <div class="col-3">
+          <img src="assets/Coronavirus.svg" />
+        </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-center">
+            <h4 style="color:rgb(42, 76, 167)" ;><strong>¿Por que elegirnos?</strong></h4>
+          </div>
+          <p style="text-align: justify";>
+            El control de la calidad del aire es importante ya que se logra minimizar la posibilidad de padecer el síndrome del edificio enfermo,
+            que definido por la OMS es el conjunto de enfermedades originadas o estimuladas por la contaminación del aire en estos espacios cerrados.
+          </p>
+          <p style="text-align: justify";>
+            Pero además estos meses estamos siendo golpeados con fuerza por otra enfermedad respiratoria: el COVID-19. El Gobierno ha publicado
+            una guía con recomendaciones sobre el uso de sistemas de climatización y ventilación para prevenir la expansión del COVID-19. Entre
+            ellas se destaca que "la renovación de aire es el parámetro más importante. Si es posible, se recomienda un mínimo de 12,5 litros por
+            segundo y ocupante, que es el valor que el Reglamento de Instalaciones Térmicas en Edificios atribuye a un aire de buena calidad.
+            Para asegurar este valor mínimo, se puede trabajar en dos direcciones: aumentar la ventilación o reducir la ocupación de los espacios.
+            ". Por esto, el objetivo de cofree es ayudar en los lugares cerrados a monitorear los espacios cerrados, ya sea la temperatura, humedad
+            o dióxido de carbono.
+          </p>
+        </div>
+        <div class="escala-img-index col-1">
+          <img src="assets/Office.svg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section><!-- Seccion donde se da informacion proporcionada por un conocedor-->
+    <div class="Fondo" style="text-align: center;font-style: italic;​">
+      <p>La medición de dióxido de carbono es útil porque es exhalado cuando respiramos.</p>
+      <p>Va junto con las partículas que espiramos, que pueden estar cargadas del virus</p>
+      <p>y quedar suspendidas en el aire (...) Es mucho más cercana a la identificación</p>
+      <p>del riesgo de transmisión del virus”.</br>
+      <p>Explicó Néstor Rojas, líder del Grupo de Investigación en Calidad del Aire de</p>
+      <p>la Universidad Nacional de Colombia.</p>
+  </div>
+</section>
+
+
+
+  <section> <!-- Se integra la API de google maps-->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center">
+        <h3 style="color:rgb(42, 76, 167)" ;><strong>Donde estamos ubicados</strong></h3>
+      </div>
+
+      <div class="Responsive-frame">
+        <div class="row">
+          <div class="col-1" style="margin-right:20rem">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641080936!2d-74.2478945452754!3d4.648283717196404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1618359864938!5m2!1ses!2sco"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-1" style="margin-right:20rem">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63229.90284986548!2d-72.53944015109113!3d7.908758591433748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66459c645dd28b%3A0x26736c1ff4db5caa!2sC%C3%BAcuta%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1618359621367!5m2!1ses!2sco"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-1">
+            <iframe
+
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15847.193591318526!2d-71.78030417587867!3d6.794367421424936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6f288f9fe05111%3A0x106c43cbadb4753c!2sFortul%2C%20Arauca!5e0!3m2!1ses!2sco!4v1618359770143!5m2!1ses!2sco"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid pb-0 mt-5 justify-content-center text-light "><!-- Pie de pagina-->
+    <footer>
+      <div class="row my-5 justify-content-center py-5">
+        <div class="col-11">
+          <div class="row ">
+            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <h3 class="text-muted mb-md-0 mb-5 bold-text">Cofree.</h3>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+              <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+              <ul class="list-unstyled">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="php-login/login.php">Inicio de sesión</a>
+                <a class="nav-link" href="php-login/signup.php">Registro</a>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+              <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIONES</b></h6>
+              <p class="mb-1">Bogota-Colombia</p>
+              <p class="mb-1">Cucuta-Colombia</p>
+              <p class="mb-1">Fortul,Arauca-Colombia</p>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-xl-2 col-auto align-self-end ">
+              <h6 class="mt-55 mt-2 text-muted bold-text"><b>Nicolas Eduardo Gaona Ordoñez </b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> gaona.nicolas@javeriana.edu.co</small>
+            </div>
+            <div class="col-xl-2  align-self-end mt-3 ">
+              <h6 class="text-muted bold-text"><b>Juan Harrinson Julio Sanguino Peña</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> juansanguino@javeriana.edu.co</small>
+            </div>
+            <div class="col-xl-2 align-self-end mt-3 ">
+              <h6 class="text-muted bold-text"><b>Juan Pablo Batista Hernández</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> juanbatista@javeriana.edu.co</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+
+
+</html>

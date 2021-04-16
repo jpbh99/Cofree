@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cofree</title><!-- Se hace el encabezado con el estilo de texto, se integra bootstrap y los estilos -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header><!-- Se hace la Presentacion de cofree con imagen de fondo y texto, ademas se integra una barra de navegacion-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="caract.html">Caracteristicas</a>
+        </li>
+      </ul>
+      <a class="navbar-brand" href="#">Cofree</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="php-login/login.php">Inicio de sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php-login/signup.php">Registro</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <p></br>
+  <p></br>
+
+  <section><!--Seccion para las caracteristicas e imagen de portada-->
+    <div class="d-flex justify-content-center">
+      <h3 style="color:rgb(42, 76, 167)" ;><strong>Caracteristicas</strong></h3>
+    </div>
+    <div class="d-flex justify-content-center">
+      <p>Solución de IoT Orientada al monitoreo y ventilación en espacios cerrados</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <img src="assets/Diagrama_usuario.png" width="1000" height="600" />
+    </div>
+  </section>
+
+  <section><!--Seccion para los sensores y actuadores ordenadas por filas y columnas-->
+    <div class="d-flex justify-content-center mt-5">
+      <h3 style="color:rgb(42, 76, 167)" ;><strong>Sensores y actuadores</strong></h3>
+    </div>
+    <div class="">
+      <div class="row">
+        <div class="col-5" style="margin-left:10rem">
+          <img src="assets/Sensor.jpg" width="550" height="350">
+        </div>
+        <div class="col-5">
+          <p style="text-align: justify;">
+            <strong style="color:rgb(42, 76, 167)">MQ-135:</strong> Sensor que detecta una variedad de gases, como lo es: aire, dióxido de carbono,
+            alcohol, acetona, etc. Su salida es analógica y puede medir los gases variando una resistencia de
+            sensibilidad que posee, este tiene una respuesta rápida y alta sensibilidad.
+          </p>
+          <p style="text-align: justify" ;>
+            <strong style="color:rgb(42, 76, 167)">DHT22:</strong> Sensor digital que detecta humedad y temperatura, el cual tiene una sensibilidad en humedad
+            de 0.1% y en temperatura de 0.1°C. Este sensor esta calibrado y compensado usando una cámara de calibración
+            precisa
+          </p>
+          <p style="text-align: justify" ;>
+            <strong style="color:rgb(42, 76, 167)">Buzzer:</strong> Dispositivo electrónico que convierte energía eléctrica en sonido, su voltaje de funcionamiento es de 5V.
+          </p>
+          <p style="text-align: justify" ;>
+            <strong style="color:rgb(42, 76, 167)">Led:</strong> Dispositivo emisor de luz, el cual tiene un voltaje de funcionamiento de 5V.
+          </p>
+          <p style="text-align: justify" ;>
+            <strong style="color:rgb(42, 76, 167)">Ventilador:</strong> ventilador con un voltaje de funcionamiento de 5 voltios que tiene una altura, largo y ancho
+            de: 10 mmx 30 mm x 30 mm respectivamente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section> <!--Seccion para la explicacion del funcionamiento de Cofree-->
+  <div class="d-flex justify-content-center mt-5">
+    <h3 style="color:rgb(42, 76, 167)" ;><strong>Como funciona</strong></h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img src="assets\Diagrama_ingenieria_IoT.png" width="1200" height="500" />
+  </div>
+  <div  style="margin: 0 15rem 0 15rem;">
+  <div style="text-align: justify;">
+    <p>
+      Cofree es un sistema de detección de CO2, temperatura y humedad, usando los sensores MQ-135 y DHT22 respectivamente,
+      el sensor MQ-135 los cuales son conectados a un sistema embebido (Raspberry pi), al leer los valores de ambos sensores se
+       procesa esta información para convertir esta información en unidades de temperatura, porcentaje y PPM. Si el valor de CO2
+       es peligroso, se encenderá un led a color rojo, se encenderá un buzzer y un ventilador.
+    </p>
+    <p>
+      Al tener toda la información procesada esta se enviará cada 10 segundos a través de internet a una página web donde se
+      almacenará esta información y se mostraran los valores de los datos más actuales y tres graficas correspondientes a los
+      3 sensores de los datos por día, es decir 24 horas desde que se enciende, además de esto habrá un recuadro que advertirá
+      al usuario si hay una cantidad peligrosa de CO2.
+    </p>
+  </div>
+  </div>
+</section>
+
+  <div class="container-fluid pb-0 mt-5 justify-content-center text-light "> <!--Pie de pagina-->
+    <footer>
+      <div class="row my-5 justify-content-center py-5">
+        <div class="col-11">
+          <div class="row ">
+            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <h3 class="text-muted mb-md-0 mb-5 bold-text">Cofree.</h3>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+              <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+              <ul class="list-unstyled">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="php-login/login.php">Inicio de sesión</a>
+                <a class="nav-link" href="php-login/signup.php">Registro</a>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+              <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIONES</b></h6>
+              <p class="mb-1">Bogota-Colombia</p>
+              <p class="mb-1">Cucuta-Colombia</p>
+              <p class="mb-1">Fortul,Arauca-Colombia</p>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-xl-2 col-auto align-self-end ">
+              <h6 class="mt-55 mt-2 text-muted bold-text"><b>Nicolas Eduardo Gaona Ordoñez </b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> gaona.nicolas@javeriana.edu.co</small>
+            </div>
+            <div class="col-xl-2  align-self-end mt-3 ">
+              <h6 class="text-muted bold-text"><b>Juan Harrinson Julio Sanguino Peña</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> juansanguino@javeriana.edu.co</small>
+            </div>
+            <div class="col-xl-2 align-self-end mt-3 ">
+              <h6 class="text-muted bold-text"><b>Juan Pablo Batista Hernández</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> juanbatista@javeriana.edu.co</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
